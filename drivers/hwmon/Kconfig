@@ -1192,6 +1192,11 @@ config SENSORS_LM95245
 	  This driver can also be built as a module. If so, the module
 	  will be called lm95245.
 
+config SENSORS_FXOS8700_SPI
+	tristate "Freescale FXOS8700 Accelerometer and Magnetometer combo sensor spi driver"
+	depends on SPI
+	default n
+
 config SENSORS_PC87360
 	tristate "National Semiconductor PC87360 family"
 	depends on !PPC
